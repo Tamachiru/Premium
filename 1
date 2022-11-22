@@ -1,0 +1,15 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Apple X",
+	Text = "Welcome",
+})
+
+wait(7)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Test Server 🛠", "DarkTheme")
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Premium")
+
+    MainSection:NewButton("Button", " ", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/NUMBER'))()
+        end)
